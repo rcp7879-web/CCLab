@@ -37,8 +37,6 @@ function draw() {
     background(3, 3, 3);
 
     if (isDragging) {
-        text("DRAG BLOCK RUNNING", 20, 100);
-        //console.log("mouse:", mouseX, mouseY);
         offsetX = (mouseX + graboffsetX) - x
         offsetY = (mouseY - graboffsetY) - y
         
