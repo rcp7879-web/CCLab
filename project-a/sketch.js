@@ -38,7 +38,7 @@ function draw() {
 
     if (isDragging) {
         offsetX = (mouseX + graboffsetX) - x
-        offsetY = (mouseY + graboffsetY) - y
+        offsetY = (mouseY - graboffsetY) - y
         
     }
 
