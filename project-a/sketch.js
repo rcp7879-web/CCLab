@@ -35,36 +35,22 @@ function setup() {
 
 function draw() {
     background(3, 3, 3);
-    console.log(
-        "moving:", isMoving,
-        "dragging:", isDragging,
-        "x:", x,
-        "offsetX:", offsetX
-    );
-    console.log("DRAW IS RUNNING");
-    console.log("isDragging =", isDragging);
-    text("offsetX: " + offsetX, 20, 50);
-    text("offsetY: " + offsetY, 20, 70);
 
     if (isDragging) {
         text("DRAG BLOCK RUNNING", 20, 100);
         //console.log("mouse:", mouseX, mouseY);
         offsetX = (mouseX + graboffsetX) - x
         offsetY = (mouseY - graboffsetY) - y
-        console.log("x:", x, "y:", y);
-        console.log("offsets:", offsetX, offsetY);
-        console.log("final position:", x + offsetX, y + offsetY);
-        console.log("x:", x, "y:", y);
-        console.log("offsetX:", offsetX, "offsetY:", offsetY);
+        
     }
 
-    console.log("isMoving:", isMoving, "x:", x);
+    
     if (isMoving) {
         x = map(cos(frameCount / 30), -1, 1, 99, 575);
         y = map(sin(frameCount / 30), -1, 1, 99, 275);
 
 
-        console.log("dragging block runs");
+     
 
 
 
